@@ -1,2 +1,5 @@
 #Temporary files
 *~
+
+#Don't include any node modules directory
+node_modules/
