@@ -3,3 +3,6 @@
 
 #Don't include any node modules directory
 node_modules/
+
+#Don't include this sample available at GitHub
+simplegit-progit/
