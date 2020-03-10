@@ -49,3 +49,12 @@ body {
     margin-left: 20px;
   }
   
+  /*To color the victory line.*/
+  .winnerTiles {
+    background-color: #50ec50;
+  }
+
+  /*To color where the move was made.*/
+  .highlightMove {
+    background-color: #3fecdc;
+  }
