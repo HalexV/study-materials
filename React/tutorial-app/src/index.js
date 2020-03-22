@@ -258,7 +258,11 @@ function Square(props) {
       }
 
       return (
+        
         <div className="game">
+          <header>
+            <h1>The tic-tac-toe Game</h1>
+          </header>
           <div className="game-board">
             <Board 
               squares = {current.squares}
@@ -267,7 +271,7 @@ function Square(props) {
             />
           </div>
           <div className="game-info">
-            <div>{status}</div>
+            <div className="status">{status}</div>
             <div>{sortButton}</div>
             <ol>{moves}</ol>
           </div>

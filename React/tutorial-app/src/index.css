@@ -15,6 +15,7 @@ body {
   
   .status {
     margin-bottom: 10px;
+    color:white;
   }
   
   .square {
@@ -24,12 +25,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 50px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
-    width: 34px;
+    width: 50px;
   }
   
   .square:focus {
@@ -42,7 +43,9 @@ body {
   
   .game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
   }
   
   .game-info {
@@ -57,4 +60,19 @@ body {
   /*To color where the move was made.*/
   .highlightMove {
     background-color: #3fecdc;
+  }
+
+  /*My CSS code*/
+  header {
+    font-family: monospace;
+    color: white;
+  }
+
+  body {
+    background-color: #6a87bd;
+  }
+
+  .game-board {
+    height: 150px;
+    width: 150px;
   }
