@@ -44,6 +44,7 @@ function Square(props) {
       return (
        <Square 
          value={this.props.squares[i]}
+         key={"square"+i.toString()}
          onClick={() => this.props.onClick(i)}
          statusTile={statusTile}
        />
@@ -79,7 +80,7 @@ function Square(props) {
           counter++;
         }
 
-      rows.push(<div className="board-row">{cols}</div>);
+      rows.push(<div className="board-row" key={"row"+i.toString()}>{cols}</div>);
 
       }
 
@@ -300,6 +301,7 @@ function Square(props) {
   /*
   ---Custom Challenge TODO---
   - (COMPLETED) Highlight where the move was made.
+  - Make it to be responsive layout.
   */
 
   ReactDOM.render(
