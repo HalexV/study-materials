@@ -1,6 +1,6 @@
 const express = require('express'); //contém todas as funcionalidades da ferramenta express.
 const cors = require('cors');
-
+const { errors } = require('celebrate');
 const routes = require('./routes');
 
 const app = express(); //criando a aplicação.
@@ -45,5 +45,6 @@ app.use(express.json());//converte o request body de json para um objeto javascr
      */
 
 app.use(routes);
+app.use(errors());
 
-app.listen(3333);
+module.exports = app;
