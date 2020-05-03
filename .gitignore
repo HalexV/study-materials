@@ -6,3 +6,6 @@ node_modules/
 
 #Don't include this sample available at GitHub
 simplegit-progit/
+
+#Don't include this projects
+Meteor/be-the-hero-with-meteor/
